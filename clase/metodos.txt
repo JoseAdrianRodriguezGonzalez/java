@@ -1,0 +1,28 @@
+Los metodos se pueden definir como
+[private | protected | public ][static][abstract][final][native][synchronized] tipo_devuelto nombremetodo(tipo parametro1,...)
+[throws expecion 1, ecvepcion 2,....]
+static,tiene el mismo efecto que en los atributos estáticos. un método static es un método que pertenece a la clase y no al objeto, por lo que al crear un objeto, usan el mismo atributo o metodo que sea estatico. Y no necesita ser instanciado 
+class A{
+    staticZ    int x;
+    int Metodo1(int a){
+
+    }
+}
+A objeto1=new A();
+abstract, si tiene un metodo abstract, se debe de declarar como clase abstract . Al ser una clase abstracta no debe ser definidia, solo declarada. Las clases hijas de la abstracta deben implmentar los métodos abstract
+final:los metodos de una clase que se declaran de tipo final no pueden ser redefinidos por las subclases, evita el polimorfismo
+native: puedo implementar una función escrita en C para poderla pasar a Java
+synchronized: cuando tenemos subprocesos, pueden acceder concurrentemente a los mismos datos y sea que una sección critca se proteja.
+
+Lista de excepciones
+thros, lista de excepecions del método orrepondiente, el cual es opcional.
+Si se permiten los metodos sobrecargados en Java.
+constructor en java, se le pueden añadir los odificadores de clase y funcionan de la misma forma que en clase
+Inicializador: es un constructor que no pertenece a ningun objeto y que se ejecuta una vez cuando se usa la clase. Es útil cuando queremos definir un valor y que se necesita un ddarle valor 
+
+Destructor: Rn java no existe cmo tal, pero exist un tread del denominado garbabage cpñññecptpr 
+finalizador:
+Es un etodo que se llama automaticamente cuando se va a destruir un objeto, antes de qu e oa memoria sea liberada. cerrar ficheros, conexiones de red, liberar memoria reservada por funciones nativas, por ejemplo al usar la funció malloc, esta memoria hay que liberearl explicitamente utilizando el metodo se deckara como finalize(){...}
+Los fnalizadores a diferencia de los destructores, no se puede saber exactmaente cuando termina un ojeto.
+
+System.runFinalization(), es para indicalr que es importante eliminar un objeto

@@ -1,0 +1,26 @@
+Declaración del arreglo
+Sintaxis:
+Arreglo en una dimensión
+Tipo_de_dato_primitivo_o_de_Referencia[] NombreDelArreglo;
+Arrelgo en dos dimensiones
+Tipo_de_dato_primitivo_o_de_referencia[][] nombre delarreglo;
+Arrelgo en tres dimensiones:
+Tipo_De_Dato:primitivi_o_de_Referencia[][][] NombreDelArreglo;
+Las líne ade código anteriores crean una variable de referencia que permite la manipulación de un arreglo correspondiente.
+Para crear un arreglo es necesario asignar la memoria correspondiente de acuerdo con las dimensiones necesarias:
+La sintáxis es la siguiente:
+new int[numeroELementos];
+new int[NumeroFilas][NumeroColumnas]
+int[] arr=new int[2]
+Por ejemplo podemos crar los siguientes arreglos:
+
+//Se declaran los arreglos (Se crean las variables de referencia)
+int[] DatosEntero;
+float[] DatosReales;
+
+//Asignar memoria correspondiente 
+DatosEnteros=new int[10];
+DatosReales=new float[10];
+
+int[][] MatrizEnteros=new int[2][2]
+double[][] MatrizDecimal=new double[2][2]

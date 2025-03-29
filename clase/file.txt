@@ -1,0 +1,22 @@
+[public][final | abstract] class Clase [extends Clase madre][implements interfases]{
+	[list_de_atributos;]
+	[lista_De_metodos;]
+}
+public, una clase deifinida como publica indica que puede ser usada por cualquier clase o paquete-
+final: si es una clase final es qeulla que no puede tener clases que la hereden 
+abstract. Es una clase que puede tener clases herederas, pero no puede ser instaciada
+extends: indica que la nueva clase definid se extiende a partir de otra clase previamente edefinida.Si se omite estta instrucci´n, por default, se considera que nuestra nueva clas, se extiende 
+implements:implementa interfaces
+
+interfaz=no implementa loss métodos, solo los define
+Los atributos de clase son aquellos atributos que pueden ser compartidos por todos lños objetos, son por clase, los otros son los que están hechos por atributos de instancia.
+Para hacerlo que sea diferente es que ponga static, 
+class B{
+static float y;
+}
+[private | protected |public][static][final] [transient][volatile] Tipo NombreAtributo[=valor]
+static: un atributo definido como static, implica que se´r el mismo para todas las instacias creadas, ya que utiliza el espacio de meoria para todos lobjetos
+final:Permite hacer que las variables sean constantes
+final static float y=2; se pueda acceder desde cualquier parte
+transient:permite almacenar en archivo los objetos y no se necesita el valor de ese atributo.
+volatile: sirve cuando dos instancia quieren leerlo al mismo tiempo y es vriable quiera ser usadp de maner concurrente
